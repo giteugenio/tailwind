@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+}
+
+@source "../../templates";
+@source "../../vendor/dereuromark/cakephp-tailwind-ui";
+
+/* Avoid a 4px overflow when breadcrumbs size to their content inside flex headers. */
+.breadcrumbs {
+  margin-inline-start: 0;
+}
